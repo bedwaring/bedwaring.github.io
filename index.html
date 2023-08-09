@@ -38,24 +38,6 @@
       background-size: cover;
     }
 
-    .github-button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      background-color: white;
-      border: none;
-      cursor: pointer;
-      position: absolute;
-      top: 70px;
-      left: 20px;
-      background-image: url('github-logo.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
     audio {
       width: 20%;
       position: absolute;
@@ -72,7 +54,6 @@
   </audio>
 
   <button class="circle-button" onclick="copyText()"></button>
-  <button class="github-button" onclick="openGitHub()"></button>
 
   <script>
     function copyText() {
@@ -83,10 +64,7 @@
         alert("Failed to copy text!");
       });
     }
-
-    function openGitHub() {
-      window.open("https://github.com/bedwaring", "_blank");
-    }
+    
   </script>
 </body>
 </html>
