@@ -1,2 +1,2 @@
 # bedwaring.github.io
-idk
+very basic site
