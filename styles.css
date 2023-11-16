@@ -1,7 +1,22 @@
-.glimmer-text {
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.container {
   position: relative;
+  text-align: center;
+}
+
+.glimmer-text {
   display: inline-block;
   font-size: 48px;
+  color: orange;
+  position: relative;
 }
 
 .glimmer-text::before {
@@ -19,7 +34,7 @@
 
 @keyframes glimmer {
   0% {
-    opacity: 0;
+    opacity: 0.5;
     background-position: -100% 0;
   }
   50% {
@@ -27,7 +42,7 @@
     background-position: 100% 0;
   }
   100% {
-    opacity: 0;
+    opacity: 0.5;
     background-position: 200% 0;
   }
 }
