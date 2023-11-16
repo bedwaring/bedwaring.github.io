@@ -14,22 +14,22 @@ body {
 
 .glimmer-text {
   display: inline-block;
-  font-size: 48px; /
-  color: orange; 
+  font-size: 48px;
+  color: orange;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .glimmer-text::before {
   content: '';
   position: absolute;
-  top: 100%; 
+  top: 100%;
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 80%);
   opacity: 0;
-  transform: translateY(-100%); 
+  transform: translateY(-100%);
   z-index: -1;
   animation: glimmer 2s infinite;
 }
