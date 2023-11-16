@@ -14,35 +14,33 @@ body {
 
 .glimmer-text {
   display: inline-block;
-  font-size: 48px;
-  color: orange;
+  font-size: 48px; /
+  color: orange; 
   position: relative;
+  overflow: hidden; 
 }
 
 .glimmer-text::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: 100%; 
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, white, transparent);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
   opacity: 0;
-  z-index: 1;
+  transform: translateY(-100%); 
+  z-index: -1;
   animation: glimmer 2s infinite;
 }
 
 @keyframes glimmer {
-  0% {
-    opacity: 0.5;
-    background-position: -100% 0;
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-100%);
   }
   50% {
     opacity: 1;
-    background-position: 100% 0;
-  }
-  100% {
-    opacity: 0.5;
-    background-position: 200% 0;
+    transform: translateY(0);
   }
 }
