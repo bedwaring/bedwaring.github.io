@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mango Client🥭</title>
+  <title>Mango Client</title>
   <style>
     body {
       background-color: black;
@@ -14,27 +14,31 @@
       margin: 0;
       position: relative;
     }
+
+    .container {
+      position: relative;
+    }
+
     .mango {
       position: absolute;
       color: orange;
       font-size: 16px;
       pointer-events: none;
       animation: falling linear infinite;
-        }
+    }
 
-        @keyframes falling {
-          0% {
-            transform: translateY(-100vh);
-            }
-            100% {
-            transform: translateY(100vh);
-            }
-        }
-
+    @keyframes falling {
+      0% {
+        transform: translateY(-100vh);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
   </style>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
       const container = document.querySelector('.container');
 
       function createMango() {
@@ -44,23 +48,24 @@
         mango.style.left = Math.random() * window.innerWidth + 'px';
         mango.style.animationDuration = Math.random() * 3 + 2 + 's';
         container.appendChild(mango);
-        mango.addEventListener('animationend', function() {
+        mango.addEventListener('animationend', function () {
           mango.remove();
-          });
+        });
       }
+
       setInterval(createMango, 500);
-  });
-</script>
+    });
+  </script>
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="container">
-    <div class="glowing-text">
-      Coming soon!
-    </div>
+<div class="container">
+  <div class="glowing-text">
+    Coming soon!
   </div>
+</div>
 
 </body>
 </html>
