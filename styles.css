@@ -4,7 +4,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #282a36; /* Dracula background color */
+  background-color: #282a36;
 }
 
 .container {
@@ -14,8 +14,8 @@ body {
 
 .glowing-text {
   display: inline-block;
-  font-size: 24px; /* Adjust the font size as needed */
-  color: #ff79c6; /* Dracula pink color */
+  font-size: 48px;
+  color: orange;
   position: relative;
-  text-shadow: 0 0 10px rgba(255, 121, 198, 0.8); /* Adjust the color and spread as needed */
+  text-shadow: 0 0 10px rgba(255, 121, 198, 0.8);
 }
