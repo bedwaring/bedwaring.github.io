@@ -38,6 +38,15 @@
       background-size: cover;
     }
 
+    .projects-button {
+      color: white;
+      background-color: orange;
+      border: none;
+      padding: 10px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
     audio {
       width: 20%;
       position: absolute;
@@ -55,6 +64,8 @@
 
   <button class="circle-button" onclick="copyText()"></button>
 
+  <button class="projects-button" onclick="redirectToProjects()">Projects</button>
+
   <script>
     function copyText() {
       var textToCopy = "SpangledOutOfMyMind";
@@ -63,6 +74,10 @@
       }).catch(function() {
         alert("Failed to copy text!");
       });
+    }
+
+    function redirectToProjects() {
+      window.location.href = 'https://bedwaring.github.io/projects';
     }
 
   </script>
