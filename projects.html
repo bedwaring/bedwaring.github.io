@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <style>
+    body {
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      position: relative;
+    }
+
+    h1 {
+      color: white;
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .projects-button {
+      color: white;
+      background-color: #3498db;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Projects that I'm currently working on:</h1>
+
+  <button class="projects-button" onclick="redirectToMangoClient()">Mango Client</button>
+
+  <script>
+    function redirectToMangoClient() {
+      window.location.href = 'bedwaring.github.io/mango';
+    }
+  </script>
+</body>
+</html>
