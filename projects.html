@@ -20,9 +20,18 @@
       margin-bottom: 20px;
     }
 
-    .projects-button {
+    .mangoclient-button {
       color: white;
       background-color: #3498db;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      margin-bottom: 10px; /* Added margin to separate buttons */
+    }
+
+    .badapple-button {
+      color: white;
+      background-color: #2ecc71;
       border: none;
       padding: 10px;
       cursor: pointer;
@@ -36,11 +45,15 @@
     function redirectToMangoClient() {
       window.location.href = 'https://bedwaring.github.io/mango';
     }
-    
-    </script>
 
-  <button class="projects-button" onclick="redirectToMangoClient()">Mango Client</button>
+    function redirectoToBadApple() {
+      window.location.href = 'https://github.com/bedwaring/bad-apple';
+    }
+  </script>
 
+  <button class="mangoclient-button" onclick="redirectToMangoClient()">Mango Client</button>
+
+  <button class="badapple-button" onclick="redirectoToBadApple()">Bad Apple but in the Linux terminal</button>
 
 </body>
 </html>
