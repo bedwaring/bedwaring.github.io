@@ -15,7 +15,7 @@ body {
 .glowing-text {
   display: inline-block;
   font-size: 48px;
-  color: orange;
+  color: rgb(24, 201, 193);
   position: relative;
   text-shadow: 0 0 10px rgba(255, 121, 198, 0.8);
 }
