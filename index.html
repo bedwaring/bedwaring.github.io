@@ -63,18 +63,13 @@
     hi
   </div>
 
-  <button class="circle-button" onclick="copyText()"></button>
+  <button class="circle-button" onclick="discord()"></button>
 
   <!--<button class="guns-button" onclick="gunslol()">better bio</button>-->
 
   <script>
-    function copyText() {
-      var textToCopy = "SpangledOutOfMyMind";
-      navigator.clipboard.writeText(textToCopy).then(function() {
-        alert("Discord name copied to clipboard!");
-      }).catch(function() {
-        alert("Failed to copy text!");
-      });
+    function discord() {
+      window.location.href = 'https://discord.com/users/998135904675823637'
     }
     
     function gunslol() {
