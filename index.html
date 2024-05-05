@@ -15,7 +15,7 @@
       -ms-overflow-style: none;
     }
 
-    .circle-button {
+    .discord-button {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,37 +33,42 @@
       background-size: cover;
     }
 
-    /*.guns-button {
-      color: black;
-      background-color: #CCCCFF;
+    .github-button {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
       border: none;
       padding: 10px;
       margin-top: 20px;
+      bottom: 20px;
+      left: 100px;
       cursor: pointer;
       position: absolute;
-    }*/
+      background-image: url('image/github.png');
+      background-repeat: no-repeat;
+      background-size: contain
+    }
     
   </style>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!--<h1>hi</h1>-->
 
   <div class="glowing-text">
     hi
   </div>
 
-  <button class="circle-button" onclick="discord()"></button>
+  <button class="discord-button" onclick="discord()"></button>
 
-  <!--<button class="guns-button" onclick="gunslol()">better bio</button>-->
+  <button class="github-button" onclick="github()"></button>
 
   <script>
     function discord() {
       window.location.href = 'https://discord.com/users/998135904675823637'
     }
     
-    function gunslol() {
-        window.location.href = 'https://guns.lol/spangled'
+    function github() {
+        window.location.href = 'https://github.com/bedwaring'
     }
 
   </script>
