@@ -2,14 +2,12 @@
 <html>
 <head>
   <title>hi</title>
+  <link rel="stylesheet" href="styles.css">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap'); /* rise font */
+    @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
     body {
       font-family: "Comfortaa";
-      display: flex;
-      justify-content: space-between;
     }
-
     .discord-button {
       display: flex;
       justify-content: center;
@@ -17,15 +15,12 @@
       width: 50px;
       height: 50px;
       border-radius: 50%;
-      background-color: #7289DA;
       border: none;
       cursor: pointer;
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background-image: url('image/discord-icon.png');
+      background-image: url('image/discord-round-black-icon.png');
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: contain;
+      background-color: transparent;
     }
 
     .github-button {
@@ -34,29 +29,25 @@
       border-radius: 50%;
       border: none;
       padding: 10px;
-      margin-top: 20px;
-      bottom: 20px;
-      left: 100px;
       cursor: pointer;
-      position: absolute;
       background-image: url('image/github.png');
       background-repeat: no-repeat;
       background-size: contain;
       background-color: transparent;
     }
-    
   </style>
-  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <div class="glowing-text">
-    hi
+  <div class="container">
+    <div class="glowing-text">
+      hi
+    </div>
+    <div class="social-container">
+      <button class="discord-button" onclick="discord()"></button>
+      <button class="github-button" onclick="github()"></button>
+    </div>
   </div>
-
-  <button class="discord-button" onclick="discord()"></button>
-
-  <button class="github-button" onclick="github()"></button>
 
   <script>
     function discord() {
